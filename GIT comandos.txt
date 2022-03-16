@@ -1,0 +1,38 @@
+git init (Inicializar/crear repositorio localmente)
+git clone +UrlDelRepo (Para clonar el Repo)
+
+git pull (origin rama) (Descarga o baja los cambios del proyecto de la rama remota y hace merge con mi rama local)
+git push (origin rama) (Carga o sube los cambios del proyecto de la rama local y los sincroniza con la rama remota)
+
+git status (Ver el estado de cambios que llevamos hasta el momento)
+git add . (Agregar los cambios al StagingArea, el punto agrega todos los cambios o indicar por nombre de Archivo que clase se desea agregar)
+git commit -m "descripci—n" (Aceptamos los cambios y se cargan al repo remoto con una breve descripci—n de los cambios realizados)
+
+git checkout nombreRama (Para ubicarse sobre otra rama)
+git checkout codigo Commit (Para ubicarse sobre otro commit. Se pueden ver con el siguiente comando o directamente en el repo)
+git log (Para ver el historial de commits/versionamiento de cambios)
+git stash push (Ignorar mis cambios enviandolos a una pila temporal)
+
+git remote update origin --prune (Para actualizar localmente el repo remoto, se actualizan las ramas viendo las nuevas o dejando de ver las eliminadas en el repo remoto)
+git remote add origin +URL (Para conectarnos a un repo remoto)
+git remote (Para ver las conexiones)
+
+git config --global user.name juacaher
+git config --global user.email camilo.bk.2010@gmail.com
+git config --global system core.longpaths true (necesario para resolver inconvenientes)
+git config --global --unset http.proxy (red externa se debe quitar el proxy)
+
+
+git merge (Para unir el código de dos ramas, me paro con el checkout en la ramaX luego lanzo git merge ramaY /también sirve con commits/ y se sitúa la cabeza HEAD en la ramaX)
+git fetch (Actualizar la rama en la que estoy ubicado)
+git branch (Para ver las ramas locales)
+git branch -r (Para ver las ramas del repo remoto=nube)
+git branch nombreRama (Crea una rama nueva)
+git checkout -b develop (Crear rama develop y de una vez me situa sobre ella)
+
+git config --global -l
+user.name=usuario
+user.email=email
+user.password=password
+systemcore.longpaths=true
+winupdater.recentlyseenversion=2.21.0.windows.1
